@@ -1,25 +1,51 @@
 .list {
-  /* display: flex;
-  flex-direction: column; */
-  margin-left: 20px;
-  margin-top: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 350px;
-  background-color: wheat;
-}
-
-.item {
-  display: flex;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: block;
+  margin-bottom: 50px;
 }
 
 .name {
   font-size: 24px;
   font-weight: 700;
 }
-img {
-  display: block;
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid grey;
+  width: 200px;
+}
+
+.status {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.statusOnline {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: green;
+}
+
+.statusOffline {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: red;
+}
+
+.avatar {
+  margin-top: 10px;
 }

@@ -14,12 +14,12 @@ export default function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friends: PropTypes.array,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
-
-//   {
-//     "avatar": "https://www.flaticon.com/svg/static/icons/svg/763/763704.svg",
-//     "name": "Mango",
-//     "isOnline": true,
-//     "id": 1812
-//   },
