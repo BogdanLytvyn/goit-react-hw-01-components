@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FrendsListItem from './frendsListItem/FrendsListItem';
+import styles from './Friends.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={styles.list}>
       {friends.map(friend => (
-        <li className="item" key={friend.id}>
-          <span className="status"></span>
-          <img className="avatar" src={friend.avatar} alt="avatar" width="48" />
-          <p className="name">{friend.name}</p>
-        </li>
+        <FrendsListItem key={friend.id} {...friend} />
       ))}
     </ul>
   );

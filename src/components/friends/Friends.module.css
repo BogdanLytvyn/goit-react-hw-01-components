@@ -1,0 +1,25 @@
+.list {
+  /* display: flex;
+  flex-direction: column; */
+  margin-left: 20px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 350px;
+  background-color: wheat;
+}
+
+.item {
+  display: flex;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+img {
+  display: block;
+}

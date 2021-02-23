@@ -1,0 +1,17 @@
+.transictionHistory {
+  margin-top: 20px;
+  border: 1px solid gray;
+  text-align: center;
+  width: 600px;
+}
+
+th {
+  height: 40px;
+  border: 1px solid gray;
+  background-color: cornflowerblue;
+}
+
+td {
+  border: 1px solid gray;
+  background-color: white;
+}

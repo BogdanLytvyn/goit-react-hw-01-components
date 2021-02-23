@@ -7,7 +7,7 @@ import data from '../data/data';
 
 const App = () => {
   return (
-    <div>
+    <>
       <Profile
         name={data.user.name}
         tag={data.user.tag}
@@ -21,7 +21,7 @@ const App = () => {
       <FriendList friends={data.friends} />
 
       <TransactionHistory items={data.transactions} />
-    </div>
+    </>
   );
 };
 
